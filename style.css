@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.load{
+    animation: slide 2s;
+}
+
+body.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(16, 10, 10);
+    font-family: "open sans", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0%{
+        background-image: url("weather.jpg");
+    }
+    20%{
+        background-image: url("weather5.jpg");
+    }
+    20.01%{
+        background-image: url("weather_slide.jpg");
+    }
+    50%{
+        background-image: url("weather7.jpg");
+    }
+    50.01%{
+        background-image: url("weather6.jpg");
+    }
+    70%{
+        background-image: url("pexels-josh-hild-2524767.jpg");
+    }
+    70.01%{
+        background-image: url("pexels-pixabay-355805.jpg");
+    }
+    100%{
+        background-image: url("/pexels-pixabay-36717.jpg");
+    }
+}
+
+.card{
+    background-color: #000000d0;
+    color: #fff;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search_icon{
+    width: 10px;
+    color: #fff;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_bar{
+    padding: 2%;
+    border-radius: 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #7c7c7c2b;
+    color: #fff;
+}
+
+button{
+    padding: 2%;
+    border-radius: 50%;
+    width: 35px;
+    background-color: #ffffff9d;
+    transition: all ease-in-outo.2s;
+    color: #fff;
+}
